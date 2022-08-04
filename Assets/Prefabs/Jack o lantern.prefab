@@ -48,6 +48,8 @@ GameObject:
   - component: {fileID: 9075832702431897032}
   - component: {fileID: 7765063044387865315}
   - component: {fileID: 1704113214283614495}
+  - component: {fileID: 5564663303430837771}
+  - component: {fileID: 7608159255589273458}
   m_Layer: 22
   m_Name: Jack o lantern
   m_TagString: Untagged
@@ -209,6 +211,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7608159255589273458}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   destroyDelay: 1
 --- !u!114 &9075832702431897032
 MonoBehaviour:
@@ -294,6 +308,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min: 0.8
   max: 1.5
+--- !u!114 &5564663303430837771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3010896720291762007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52278aa70833e1749a652cdad8675412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -3886258093978918809}
+        m_TargetAssemblyTypeName: Mob, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!135 &7608159255589273458
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3010896720291762007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.283
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!1001 &2212967032947471615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,19 +612,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3165950710509693232}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8971705791250918489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3171328759307295962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd0a0cb8985748846ae9c45842fd1a5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arrangeRange: 0.5
 --- !u!114 &182226111113928439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,6 +625,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intensity: 5
+--- !u!114 &8971705791250918489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3171328759307295962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0a0cb8985748846ae9c45842fd1a5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrangeRange: 0.5
 --- !u!198 &5718365579671568661 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7256425273874606117, guid: 1206a164d4a675548b1f592525ba8ab2,
