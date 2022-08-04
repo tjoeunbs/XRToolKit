@@ -36,7 +36,9 @@ public class RayVisualizer : MonoBehaviour
     {
         while (true)
         {
-            if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hitInfo, distance, hitRayMask))
+            if (Physics.Raycast(transform.position, transform.forward, 
+                out RaycastHit hitInfo, distance, hitRayMask))
+
             {
                 ray.SetPosition(1, transform.InverseTransformPoint(hitInfo.point));
                 ray.enabled = true;
