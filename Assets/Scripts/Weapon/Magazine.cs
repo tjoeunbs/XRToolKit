@@ -49,6 +49,8 @@ public class Magazine : MonoBehaviour
         return false;
     }
 
+    [ContextMenu("Reload")]
+
     public void StartReload()
     {
         if (CurrentBullets == maxBullets)

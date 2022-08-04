@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class RayVisualizer : MonoBehaviour
 {
-    [Header("Ray")]
+    [Header("----------Ray----------")]
     public LineRenderer ray;
     public LayerMask hitRayMask;
     public float distance = 100f;
 
-    [Header("Reticle Point")]
+    [Header("-----Reticle Point-----")]
     public GameObject reticlePoint;
     public bool showReticle = true;
 
